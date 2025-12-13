@@ -1,0 +1,5 @@
+    1.  Course and Instructor Introduction
+    2.  Private Course Feedback Link
+    3.  How to use this course
+    4.  Slides Used In the Course
+    5.  GITHub URL
