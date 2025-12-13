@@ -1,1 +1,9 @@
     1.  What are Microservices
+    2.  Why Microservices
+    3.  What is Cloud Computing
+    4.  Types of Cloud
+    5.  Service Models
+    6.  AWS
+    7.  Continuous Integration , Delivery and Deployment
+    8.  Devops
+    9.  The Fundamentals

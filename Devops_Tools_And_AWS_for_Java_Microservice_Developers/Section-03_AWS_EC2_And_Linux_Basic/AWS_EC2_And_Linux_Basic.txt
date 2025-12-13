@@ -1,0 +1,55 @@
+    1.  Setup a AWS Account
+    2.  AWS Regions and Zones
+    3.  EC2 Service
+    4.  Launch a EC2 Instance
+    5.  SSH
+    6.  Connect from Mac
+    7.  Windows Only - Install MobaXTerm SSH Client
+    8.  Windows Only - Install Putty and PuttyGen
+    9.  Windows Only-Connect from windows
+    10. EC2 Tips
+    11. Linux Directories
+    12. Browsing Directories and Files
+    13. VI Editor
+    14. Installing Software Packages
+    15. EC2 Instance Creation
+
+Linux commend:
+    Login: ec2-user
+    1.  Go to the super user: sudo -i
+    2.  Exit for the user: exit
+    3.  $ represent user and # represent Root
+    4.  Present working Directory: pwd
+    5.  list all directory: ls or ll(ls -ltr)
+    6.  create a directory: mkdir <directory name>
+    7.  go into the directory: cd <directory name>
+    8.  cp: for copy the file 
+    9.  mv: move the file from one location to other 
+    10. rm: remove(delete) the file.
+    11. rm -r <dir>: to remove the directory
+    12. VI Editor:
+        1.  vi <file name>
+        2.  insert mode : i
+        3.  Start of the line: I
+        4.  Append at curser:esc+a
+        5.  End of the line:A
+        6.  new line: o
+        7.  new line before the line:O
+        8.  remove the current present curser:esc+s
+        9.  remove the line:esc+dd
+        10. copy a line:esc+yy
+        11. paste:p
+        12. execute:esc+shift+:wq/q/q!/wq!
+        13. to install any software:yum
+        14. List all the repository:yum repolist
+        15. List all the installed software:yum list installed 
+        16. group the software:yum grouplist
+        17. to install any software:yum install <Packages>
+        18. to connect to any url: curl <url>localhost <port number>80
+        19. Start a services:service <service name>httpd start
+        20. Stop a services:service <service name>httpd stop
+        21. To remove a package/software:yum remove <package>httpd
+        22. To check the lines:tail -5 <file name>
+        23. to check all the commend:yum history
+        24. To search:yum search java
+        
