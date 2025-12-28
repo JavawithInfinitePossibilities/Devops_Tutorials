@@ -40,10 +40,18 @@ Note: If the data in the git editor has long then to came out from that list is 
             git status/ git log
     12. Resolving Merge Conflicts
     13. Delete a branch
+        1.  git branch -d <branch name>
     14. Git Local
+        1.  git remote -v
+        2.  git remote add origin <ssh/https url path of git>
+        3.  git push -u origin <which branch you want to push>
+        4.  Incase you create a new branch and is not maped to any branch then. 
+            git push --set-upstream origin <branch name>
+            This will create the branch and will push the branch to remote.
     15. Create remote repo
     16. Push and Pull
     17. Merge Conflicts on the same branch
+Note: I am trying to create a merge conflict in the same branch. But this may cause issue.
     18. Fetch vs Pull
     19. Reset
     20. Revert
