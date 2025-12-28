@@ -1,0 +1,54 @@
+    1.  Introduction
+    2.  Git Terminology
+        0.  git --version: check the git version.
+        1.  Clone: copy the project from remote repository.
+        2.  git remote -v: check the remote version.
+    3.  Install GIT on Windows
+    4.  Install GIT on Mac
+    5.  Git Configuration
+        1.  git config --global user.name "Sid"
+        2.  git config --global user.email "sid@gmail.com"
+        3.  git config --list
+Note: If the data in the git editor has long then to came out from that list is Ctrl+1
+    6.  Git in action
+        1.  create a folder.
+        2.  git init
+        3.  git status
+        4.  git branch/ git branch -a
+        5.  git add <file name>/ git add .
+        6.  git rm --cached <file name>
+        7.  git commit -m "Comment"
+    7.  Log and Diff
+        1.  git log
+        2.  git diff <commit id> <commit id>
+    8.  Revert Changes
+        1.  git rm --cached <file name>
+        2.  git checkout <file name>: if the file is not staged
+        3.  git reset HEAD <file naem>
+        4.  git checkout <file name>: If the file is in the stage then repeat the step 3 and 4.
+    9.  The Secret Git Folder
+    10. Branches
+        1.  git branch/ git branch -a
+        2.  git checkout <branch name>
+        3.  git branch -b <branch name>: this will create the branch and checkout at the sametime.
+    11. Merge
+        1.  go the the branch where you want to merge the Changes.
+            git checkout master
+        2.  then merge the code.
+            git merge dev.
+        3.  check the status.
+            git status/ git log
+    12. Resolving Merge Conflicts
+    13. Delete a branch
+    14. Git Local
+    15. Create remote repo
+    16. Push and Pull
+    17. Merge Conflicts on the same branch
+    18. Fetch vs Pull
+    19. Reset
+    20. Revert
+    21. Concept of cherry picking
+    22. Stash
+    23. Install git on linux
+    24. GIT Remote
+    25. GIT Pull and Push
