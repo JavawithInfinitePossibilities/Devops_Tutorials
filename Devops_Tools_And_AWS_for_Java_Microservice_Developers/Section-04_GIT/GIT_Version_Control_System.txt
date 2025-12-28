@@ -52,8 +52,31 @@ Note: If the data in the git editor has long then to came out from that list is 
     16. Push and Pull
     17. Merge Conflicts on the same branch
 Note: I am trying to create a merge conflict in the same branch. But this may cause issue.Creating a merge conflict in the same branch.
+        1.  commit your local changes. 
+            git add <files to commit>
+            git commit -m "message"
+        2.  then do a pull request.
+            git pull
+        3.  Incase a merge conflict raised then resolved the conflict manually by opening the IDE or editor.
+        4.  Then do add of conflict resolved files.
+            git add <conflict resolved file name>
+        5.  Then commit the file again.
+            git commit -m "commit message"
+        6.  git push -u origin <branch name>
     18. Fetch vs Pull
+        Git Fetch: The git fetch command is used to retrieve the latest updates (commits, files, and references) from the remote repository and store them in your local Git repository. 
+        1.  Does not modify your local working directory or current branch.
+        2.  Updates remote-tracking branches (e.g., origin/main), providing a way to see what others have done without disrupting your local work.
+        3.  Allows you to review or compare changes before integrating them using commands like git log or git diff.
+        Git Pull: The git pull command automates the process of synchronizing your local branch with its remote counterpart. It is essentially two operations in one: git fetch followed by either a git merge or git rebase (depending on configuration).
+        1.  Downloads and immediately integrates the remote changes into your current local branch.
+        2.  Can cause merge conflicts if the remote changes conflict with local modifications, pausing your workflow until resolved.
+        3.  Updates your working directory files to match the latest changes from the remote. 
     19. Reset
+        0.  to check the all commit ids 
+            git log
+        1.  git reset --hard <commit id>
+        2.  git push -f: this will delete the rest commit and the head will point to the commit id passed in the previous commend.
     20. Revert
     21. Concept of cherry picking
     22. Stash
