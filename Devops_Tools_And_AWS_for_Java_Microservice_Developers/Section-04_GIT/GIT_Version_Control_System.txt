@@ -78,8 +78,15 @@ Note: I am trying to create a merge conflict in the same branch. But this may ca
         1.  git reset --hard <commit id>
         2.  git push -f: this will delete the rest commit and the head will point to the commit id passed in the previous commend.
     20. Revert
-    21. Concept of cherry picking
+        0.  to check the all commit ids 
+            git log
+        1.  git revert head 
+            adding the message.
+        2.  git push.
+    21. Concept of cherry picking.
     22. Stash
+        1.  git stash
+        2.  git stash pop
     23. Install git on linux
     24. GIT Remote
     25. GIT Pull and Push
