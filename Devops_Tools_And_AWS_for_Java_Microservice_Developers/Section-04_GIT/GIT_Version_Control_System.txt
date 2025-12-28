@@ -44,6 +44,7 @@ Note: If the data in the git editor has long then to came out from that list is 
     15. Create remote repo
     16. Push and Pull
     17. Merge Conflicts on the same branch
+Note: Creating a merge conflict in the same branch.
     18. Fetch vs Pull
     19. Reset
     20. Revert
