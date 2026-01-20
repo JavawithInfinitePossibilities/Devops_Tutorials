@@ -1,0 +1,36 @@
+    1.  Introduction
+    2.  Windows - Install Maven
+        To check Maven: mvn -version
+        To configure the Maven in the system
+            copy the bin folder path and add to the system/User path
+            e.g: Search for Environment variable.
+                    Edit system environment variable
+                    environment variable
+                    edit system/User variable
+                        edit Path variable.
+    3.  Why Maven?
+    4.  Install Maven
+    5.  Installation Details
+    6.  Create a java project
+        Commend :
+        mvn archetype:generate -DarchetypeGroupId=org.codehaus.mojo.archetypes -DarchetypeArtifactId=pom-root -DarchetypeVersion=RELEASE -DinteractiveMode=false -DartifactId=JavaCentralRepo -Dversion=1.0.0-SNAPSHOT -DgroupId=com.tutorials.java.core -Dpackage=JavaCentralRepo
+        ----------------------------------------------------------------------------------------
+        archetype:generate : Maven goal
+        -DXXX : parameters passed to project
+        ----------------------------------------------------------------------------------------
+        mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes  -DarchetypeArtifactId=maven-archetype-webapp -DarchetypeVersion=RELEASE -DinteractiveMode=false -DgroupId=com.tutorials.java.core.repo -DartifactId=Java-Core-Repo -Dversion=0.0.1-SNAPSHOT -Dpackage=Java-Core-Repo
+    7.  POM XML
+    8.  Building the project from commandline
+        Commend:
+        mvn install
+        To execute the jar :
+        java -cp <jar file>.jar <main class> com.tutorial.mainclass
+    9.  Plugins
+        [pluginid:goalid]
+        archetype:generate
+    10. Life Cycle Phases
+        mvn install
+        1.  process-resources
+        2.  compile
+        3.  test
+        4.  package
