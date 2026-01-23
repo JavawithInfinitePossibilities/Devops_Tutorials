@@ -34,3 +34,38 @@
         2.  compile
         3.  test
         4.  package
+    11. Coordinates
+        groupid:artifactid:version:packageing
+        com.oracle:apollo:apollo-1.0.jar:jar/war
+    12. Repositories
+    13. Create a java project and push it to github.
+        mvn archetype:generate -DgroupId=com.bharath -DartifactId=java-project -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+            In windows system to check the structure: E:/Repositories/Devops_Java_project/java-project>tree 
+            git init
+            git stage .
+            Note: Incase any error come in: 
+            git config --global --add safe.directory E:/Repositories/Devops_Java_project/java-project 
+            git status
+            git commit -m "first commit"
+            git remote add origin https://github.com/JavawithInfinitePossibilities/devops_java_repository.git
+            git remote -v
+            git branch
+            Note: Use the branch name to push into repository
+            git push -u origin master
+
+    14. Create a java web application and push it to gibhub.
+        mvn archetype:generate -DgroupId=com.bharath -DartifactId=java-web-project -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+            In windows system to check the structure: E:\Repositories\Devops_Java_project\java-web-project>tree 
+            git init
+            git stage .
+            Note: Incase any error come in: 
+            git config --global --add safe.directory E:/Repositories/Devops_Java_project/java-web-project 
+            git status
+            git commit -m "first commit"
+            git remote add origin https://github.com/JavawithInfinitePossibilities/devops_java_web_repository.git
+            git remote -v
+            git branch
+            Note: Use the branch name to push into repository
+            git push -u origin master
+    15. Install maven and create projects on linux.
+    16. Maven
