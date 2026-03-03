@@ -1,0 +1,8 @@
+1.  Install Java on Windows
+2.  Install Java
+3.  Install STS
+4.  Configure JDK in STS
+5.  Windows Only -Install Mysql
+6.  Windows Only - Install Mysql Workbench
+7.  MySql and Workbench on Mac
+8.  Install Postman
