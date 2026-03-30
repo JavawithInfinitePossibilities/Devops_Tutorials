@@ -1,0 +1,7 @@
+1.  Cloudwatch Service
+2.  Simple Notification Services
+3.  Create Topic and Subscription
+4.  UPDATE
+5.  Create Cloudwatch Alarm
+6.  Test
+7.  Cloud Watch and SNS

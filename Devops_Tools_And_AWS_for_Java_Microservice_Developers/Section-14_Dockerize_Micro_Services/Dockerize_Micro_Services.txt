@@ -1,0 +1,12 @@
+1.  Visual Studio code - The Docker IDE
+2.  Install Visual Studio Code IDE
+3.  Launch MySql Container
+4.  Create Tables
+5.  Dockerize the APPs
+6.  Build Images
+7.  Launch the Microservice containers
+8.  Test
+9.  Sign Up For Docker Hub
+10. Push to Docker Hub
+11. Docker Prune Command
+12. Dockerize Microservices

@@ -29,6 +29,8 @@
     13. VI Editor
     14. Installing Software Packages
     15. EC2 Instance Creation
+    Note: To keep the linux instance session alive use top commend and for exit Ctrl+z
+        $ top
 
 Linux commend:
     Login: ec2-user
@@ -68,4 +70,5 @@ Linux commend:
         22. To check the lines:tail -5 <file name>
         23. to check all the commend:yum history
         24. To search:yum search java
+        25. To identify any service is running : ps -ef | grep java
         

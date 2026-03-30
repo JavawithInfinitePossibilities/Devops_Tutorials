@@ -1,0 +1,27 @@
+Step 1: Perform Al2023 Package Update
+    sudo dnf update
+Step 2: Install MariaDB 10.05 on Amazon Linux 2023
+    1.  first check the latest version of MariaDB
+            dnf list mariadb*
+    2.  Install based on the requirement
+            sudo dnf install mariadb105-server
+Step 3: Start and Enable MariaDB
+    sudo systemctl start mariadb
+    sudo systemctl enable mariadb
+    1.  To check the server version
+            mariadb -v OR
+            Login to the sql server
+            mysql -u root -p
+            select VERSION();
+    2.  how to check if the DB is up and running 
+            systemctl is-active mariadb
+    3.  To check the networkport
+            ss -tulpn | grep 3306
+Step 4: Secure MariaDB Installation
+    sudo mysql_secure_installation
+Step 5: Accessing MariaDB
+    mysql -u root -p
+Install Java:
+    yum install java
+===================================================================================
+How to connect to a remote database on EC2 instance using mysql workbanch:

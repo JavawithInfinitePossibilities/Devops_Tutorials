@@ -1,0 +1,66 @@
+1.  S3
+2.  Launch Instance and Setup the instance
+3.  S3 Update
+    wget -O couponservice-0.0.1-SNAPSHOT.jar <presigned URL>
+4.  Use S3 Deploy Jar and Test
+5.  Automate App Launch
+    Step-0: Exit the root user
+    Step-1: Create Services:
+        sudo vim /etc/systemd/system/couponapplication.service
+        Insert the code below into:
+        [Unit]
+        Description=Java Application as a Service
+        [Service]
+        User=ec2-user
+        #change this directory into your workspace
+        #mkdir workspace
+        WorkingDirectory=/home/ec2-user/workspace
+        #path to the executable bash script which executes the jar file
+        ExecStart=/bin/bash /home/ec2-user/workspace/couponscript.sh
+        SuccessExitStatus=143
+        TimeoutStopSec=10
+        Restart=on-failure
+        RestartSec=5
+        [Install]
+        WantedBy=multi-user.target
+
+    Step-2: Create a bash script to call your service
+        mkdir /home/ec2-user/workspace
+        chmod -R 777 /home/ec2-user/workspace
+        cd /home/ec2-user/workspace
+        sudo vi couponscript.sh
+        #!/bin/sh
+        sudo /usr/bin/java -jar /home/ec2-user/couponservice-0.0.1-SNAPSHOT.jar
+
+        sudo chmod -R 777 /home/ec2-user/workspace/couponscript.sh
+
+    Step-3: Start service
+        cd /etc/systemd/system
+        sudo systemctl daemon-reload
+        sudo systemctl enable couponapplication.service
+        sudo systemctl start couponapplication
+        sudo systemctl status couponapplication -l
+    Note : How to check the status
+        journalctl -u couponapplication.service -f
+        or 
+        ss -tulpn | grep 9091
+        or 
+        netstat -tulpn | grep LISTEN
+    Step-4: Stop the service
+        sudo systemctl stop couponapplication
+    Step-5: To restart service
+        sudo systemctl restart couponapplication
+
+    Note:
+    https://www.udemy.com/course/devops-tools-and-aws-for-java-microservice-developers/learn/lecture/14183053/#questions/12956744
+    https://www.udemy.com/course/devops-tools-and-aws-for-java-microservice-developers/learn/lecture/14183053/#questions/13531692
+
+    Note: To check the service are working properly
+    http://ec2-15-206-158-16.ap-south-1.compute.amazonaws.com:9091/couponapi/coupons/SUPERSALE
+
+6.  Upgrade - Install amazon linux extras
+7.  Install Stress Command
+8.  rc local troubleshooting
+9.  Create Custom AMI and Scale the APP Manually
+10. Manual deployment to AWS using EC2 and S3
+11. Manual deployment to AWS using EC2 using S3

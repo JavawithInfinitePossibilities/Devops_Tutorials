@@ -1,0 +1,5 @@
+1.  Introduction
+2.  Create Launch Configuration
+3.  Create Auto Scaling Group
+4.  Test
+5.  Auto Scaling

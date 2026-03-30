@@ -1,0 +1,7 @@
+1.  Elastic Beanstalk
+2.  RDS
+3.  Update - Open port 3306
+4.  Create mysql database on RDS
+5.  Deploy the Coupon Service
+6.  Deploy the Product Service
+7.  Wrap Up
