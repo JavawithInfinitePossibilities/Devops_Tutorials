@@ -1,0 +1,10 @@
+1.  Introduction
+2.  Master and Agent
+3.  Establish SSH between Master and Agent
+4.  Configure hostname and execute remote commands
+5.  Web Server Creation through Master
+6.  Create and Run First Playbook
+7.  Looping in action
+8.  Install Packages
+9.  Tag Tasks
+10. More Tags

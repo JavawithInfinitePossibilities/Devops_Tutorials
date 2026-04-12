@@ -1,0 +1,79 @@
+1.  POD
+2.  Create First Pod
+    kubectl run <name>firstpod --image=nginx
+    kubectl get pods
+    kubectl describe pod <name> firstpod
+    kubectl exec -it <name> firstpod -- /bin/bash
+        #cd /usr/share/nginx/html
+        #ls -ltr
+        #cat index.html
+        #apt-get update
+        #apt-get install curl
+        #curl localhost
+        #exit
+    kubectl delete pod <name>firstpod
+Note:
+    kubectl run firstpod --image=nginx
+    kubectl get firstpod -o yaml
+
+3.  Create Pod using YAML
+    kubectl create -f <filename>firstpod.yml
+    kubectl get pods
+    kubectl exec -it firstpod --container <container name>db -- /bin/bash
+        #ls 
+        #exit
+    kubectl delete all --all
+Note:
+    kubectl delete -f firstpod.yml
+
+4.  POD Life Cycle
+    1.  Pending
+    2.  Running
+    3.  Succeeded
+    4.  Failed
+    5.  Unknown
+
+5.  Labels and Selectors
+6.  Use Labels and Selectors
+    kubectl get all --show-labels
+    kubectl get all --selector='app=fp'
+
+7.  Annotations
+8.  Namespaces
+    kubectl get ns
+    kubectl get pods
+    kubectl create -f firstpod.yml
+    kubectl get pods
+    kubectl create ns firstns
+    kubectl delete -f firstpod.yml
+    kubectl create -f firstpod.yml --namespace firstns
+    kubectl get pods 
+    kubectl get pods --namespace firstns
+    kubectl config set-context --current --namespace firstns
+
+9.  Kubectl is cool
+    kubectl get all
+    kubectl --help
+    kubectl create -f firstpod.yml --dry-run=client
+    kubectl run demo --image=httpd 
+    kubectl get pod/demo -o yaml --export=true
+    kubectl explain pod 
+    kubectl explain pod.spec
+    kubectl explain deployment
+    
+10. Deployment
+
+11. Access the cluster using Dashboard
+    minikube dashboard
+    
+12. Kubernetes YAML Config Explained
+13. Create Deployment YAML
+14. Service and Types
+15. Create Service
+16. Load Balancing
+17. Status in YAML
+18. Rolling Updates
+19. Rolling Updates in action
+20. Rollbacks
+21. Manual Scaling
+22. Kubernetes

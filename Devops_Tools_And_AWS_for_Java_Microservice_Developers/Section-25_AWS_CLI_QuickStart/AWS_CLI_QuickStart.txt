@@ -1,0 +1,5 @@
+1.  Introduction
+2.  Create Programmatic User
+3.  Install and configure CLI
+4.  Run Commainds
+5.  Create and Terminate EC2 Instance

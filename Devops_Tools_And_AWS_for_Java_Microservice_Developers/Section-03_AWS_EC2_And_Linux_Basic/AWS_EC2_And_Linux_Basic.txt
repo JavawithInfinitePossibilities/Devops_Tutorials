@@ -71,4 +71,8 @@ Linux commend:
         23. to check all the commend:yum history
         24. To search:yum search java
         25. To identify any service is running : ps -ef | grep java
+        26. To check the memory : #free -m
+        27. To check all the services which are running: #systemctl list-units --type=service --state=running
+        28. To Stop : #systemctl stop <Services Name>mariadb
+        29. To check the status: #service jenkins status
         

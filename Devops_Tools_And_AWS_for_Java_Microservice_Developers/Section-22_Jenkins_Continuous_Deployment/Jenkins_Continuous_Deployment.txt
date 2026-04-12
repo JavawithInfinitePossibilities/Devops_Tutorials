@@ -1,0 +1,31 @@
+1.  Jenkins Introduction
+2.  Jenkins Prerequisites
+3.  Setup Jenkins
+    1.  wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+    2.  rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+    3.  yum install jenkins
+    4.  service jenkins start
+    5.  cat /var/lib/jenkins/secrets/initialAdminPassword
+    6.  service jenkins start
+    
+4.  Jenkins Dashboard
+5.  Configure root user permissions
+6.  Update
+7.  First Job
+8.  Configuring a Maven Project
+9.  Assignment - Build a Maven Web Project
+10. Work with GIT Repo
+11. Build Triggers
+12. Configure Security
+13. Understanding Deployment
+14. Tomcat installation and configuration
+15. Configure Users
+16. Install Deployment plugin
+17. Continuous Integration in action
+18. Webhooks Introduction
+19. GitHub Webhooks in action
+20. Master and Agent
+21. Step 1 - Generate the keys on master
+22. Step 2 - Launch the agent instance
+23. Step 3 - Create a node using the agent
+24. Step 4 - Agent 007 in action

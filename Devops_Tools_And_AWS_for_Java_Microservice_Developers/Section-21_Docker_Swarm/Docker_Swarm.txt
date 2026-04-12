@@ -1,0 +1,16 @@
+1.  Introduction
+2.  How Swarm works
+3.  Architecture
+4.  Create EC2 Instances
+5.  Setup Swarm
+6.  Add another manager
+7.  Create a Service
+8.  Multiple Replicas and Scaling
+9.  Update and Rollback
+10. Assignment
+11. Drain Worker Node
+12. Docker Stack Deploy
+13. Stack Deploy
+14. Remove Worker Node
+15. Switch Managers
+16. Replicas in the swarm
